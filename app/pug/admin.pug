@@ -1,0 +1,23 @@
+extends templates/admin-template
+
+block variables
+  - var pageTitle = 'Админ панель'
+
+block main
+
+  .section-content
+    h2 Добавить номер
+    form.contact-form(id="contact-form")
+        .row(id="form-notify")
+          //- .message.message--error Сообщение об ошибке
+          //- .message.message--success Форма успешно отправлена
+        .contact-form__row
+          input.input(type="text" id="app-title" name="app-title" placeholder="Название номера")
+        .contact-form__row
+          input.input(type="text" id="app-beds" name="app-beds" placeholder="Количество спальных мест")
+        .contact-form__row
+          input.input(type="file" id="app-img" name="app-img")
+        .contact-form__row
+          textarea.textarea(id="app-desc" name="app-desc" placeholder="Описание номера")
+        .contact-form__row
+          input.button(type="submit" id="app-add" name="app-add" value="Добавить номер")

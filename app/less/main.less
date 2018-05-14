@@ -1,0 +1,113 @@
+@import 'blocks/appartment';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/contacts';
+
+// @green: #26bc8c;
+
+html {
+  height: 100%;
+  // position: relative;
+}
+
+body {
+height: 100%;
+background-image: url("../img/bg-island.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; 
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-content {
+  background-color: #f1f0f0;
+  padding: 50px 30px;
+  p {
+    margin: 15px 0 20px 0;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  // display: flex;
+  // flex-direction:column;
+}
+.button {
+  transition: 0.2s ease-in;
+  display: inline-block;
+  background-color: #26bc8c;
+  padding: 10px 40px 10px 40px;
+  color: #FFF;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  border: none;
+  // font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: #04de98;
+  outline-style: none;
+}
+.custom-color-btn-back {
+  background-color: #26bc8c !important;
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
+.gallery {
+  padding: 30px 50px;
+}
+.photos {
+  position: relative;
+  height: 600px;
+}
+.photos img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.photos .showed {
+  opacity: 1;
+}
+.scroll {
+  width: 35px;
+  height: 15px;
+  fill: #fff;
+  cursor: pointer;
+}
+.prev {
+  position: absolute;
+  top: 293.5px;
+  left: 15px;
+  transform: rotate(90deg);
+}
+.next {
+  position: absolute;
+  top: 293.5px;
+  right: 15px;
+  transform: rotate(-90deg);
+  }

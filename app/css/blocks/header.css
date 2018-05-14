@@ -1,0 +1,71 @@
+.section-header {
+  padding: 2.1875rem 2.5rem 1.5625rem 1.875rem;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logo img {
+  width: 9.375rem;
+  margin-left: 1.875rem;
+}
+.navigation {
+  font-size: 1.375rem;
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.navigation ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.navigation ul li {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  margin-left: 2.5rem;
+}
+.navigation a {
+  color: #333333;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+}
+.navigation a:hover,
+.navigation a:focus,
+.navigation a:active {
+  text-decoration: none;
+  color: #26bc8c !important;
+}
+.navigation span {
+  text-transform: none;
+  font-style: italic;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  color: #888888;
+  display: block;
+}
+.navigation ul li.reservation-btn {
+  -webkit-border-radius: 0.25rem;
+          border-radius: 0.25rem;
+  padding: 0.625rem;
+}
+.navigation ul li.reservation-btn span {
+  color: rgba(255, 255, 255, 0.7);
+}
+.active {
+  color: #26bc8c !important;
+}

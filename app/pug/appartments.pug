@@ -1,0 +1,30 @@
+extends templates/main-template
+
+block variables
+  - var pageTitle = 'Размещение'
+
+block main
+
+  .section-content
+    h1 Варианты для размещения
+
+    +appartment('Superior Double item',
+    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure .',
+    ['air condition,','free wi-fi,','bath,','flat tv'],
+    'background-image: url(img/rooms/room_01.jpg);')
+
+    +appartment('Superior Single item',
+    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure .',
+    ['air condition,', 'free wi-fi'],
+    'background-image: url(img/rooms/room_02.jpg);')
+
+    +appartment('Superior Single item',
+    'Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure .',
+    ['air condition,', 'free wi-fi'],
+    'background-image: url(img/rooms/room_03.jpg);')
+
+    +appartment('Superior Double item',
+    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure .',
+    ['air condition,','free wi-fi,','bath,','flat tv'],
+    'background-image: url(img/rooms/room_04.jpg);')
+

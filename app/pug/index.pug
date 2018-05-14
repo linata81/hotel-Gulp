@@ -1,0 +1,23 @@
+extends templates/main-template
+
+block variables
+  - var pageTitle = 'Отель Лермонтов'
+
+block main
+
+  .section-content.gallery
+    .photos
+      img.showed(src="img/hotel/1.jpg" alt="hotel")
+      img(src="img/hotel/2.jpg" alt="holl")
+      img(src="img/hotel/3.jpg" alt="bassein")
+      img(src="img/hotel/4.jpg" alt="sport")
+      img(src="img/hotel/5.jpg" alt="cafe")
+      .buttons
+        svg.scroll.prev
+          use(xlink:href="img/sprite.svg#arrow-scroll")
+        svg.scroll.next
+          use(xlink:href="img/sprite.svg#arrow-scroll")
+    p Отель Лермонтов приветствует Вас. Расположение отеля на берегу Черного моря, оформление и комплектация номеров, домашняя русская и традиционная европейская кухня нашего кафе – все это оставит у Вас самые приятные впечатления о пребывании в Отеле Лермонтов!
+
+block script
+  script(src='js/slider.js')
